@@ -4,19 +4,6 @@ Projeto Java que demonstra como conectar em um banco de dados **Oracle** utiliza
 
 ---
 
-## 📋 Índice
-
-- [Tecnologias](#tecnologias)
-- [Pré-requisitos](#pré-requisitos)
-- [Configuração do Banco de Dados](#configuração-do-banco-de-dados)
-- [Configuração do Projeto](#configuração-do-projeto)
-- [Como Rodar](#como-rodar)
-- [Estrutura do Projeto](#estrutura-do-projeto)
-- [Descrição das Classes](#descrição-das-classes)
-- [Estrutura do Banco de Dados](#estrutura-do-banco-de-dados)
-
----
-
 ## 🚀 Tecnologias
 
 | Tecnologia | Versão |
