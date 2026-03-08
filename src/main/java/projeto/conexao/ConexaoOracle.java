@@ -5,9 +5,9 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class ConexaoOracle {
-    private static final String URL     = "jdbc:oracle:thin:@localhost:1521:ORCL";
-    private static final String USUARIO = "seu_usuario";
-    private static final String SENHA   = "sua_senha";
+    private static final String URL     = "jdbc:oracle:thin:@192.168.15.6:1521/xepdb1";
+    private static final String USUARIO = "system";
+    private static final String SENHA   = "123A56789o";
 
     public static Connection obterConexao() throws SQLException {
         return DriverManager.getConnection(URL, USUARIO, SENHA);

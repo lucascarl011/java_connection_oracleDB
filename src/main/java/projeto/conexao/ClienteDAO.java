@@ -7,7 +7,7 @@ public class ClienteDAO {
 
     // Inserção única — retorna o ID gerado pelo Oracle
     public int inserir(Cliente cliente) {
-        String sql = "INSERT INTO CLIENTES (NOME, EMAIL, TELEFONE) VALUES (?, ?, ?)";
+        String sql = "INSERT INTO CMA.CLIENTES (NOME, EMAIL, TELEFONE) VALUES (?, ?, ?)";
 
         try (Connection conn = ConexaoOracle.obterConexao();
              PreparedStatement stmt = conn.prepareStatement(sql, new String[]{"ID"})) {
@@ -38,7 +38,7 @@ public class ClienteDAO {
 
     // Inserção em lote — muito mais eficiente para muitos registros
     public int inserirEmLote(List<Cliente> clientes) {
-        String sql = "INSERT INTO CLIENTES (NOME, EMAIL, TELEFONE) VALUES (?, ?, ?)";
+        String sql = "INSERT INTO CMA.CLIENTES (NOME, EMAIL, TELEFONE) VALUES (?, ?, ?)";
         int totalInseridos = 0;
 
         try (Connection conn = ConexaoOracle.obterConexao();

@@ -7,17 +7,17 @@ public class Main {
 
     public static void main(String[] args) {
 
-        // 1. Testar conexão
+        // Testar conexão
         ConexaoOracle.testarConexao();
 
         ClienteDAO dao = new ClienteDAO();
 
-        // 2. Inserção única
+        // Inserção única
         System.out.println("\n=== Inserção única ===");
         Cliente c1 = new Cliente("Maria Silva", "maria@email.com", "(11) 91234-5678");
         dao.inserir(c1);
 
-        // 3. Inserção em lote
+        // Inserção em lote
         System.out.println("\n=== Inserção em lote ===");
         List<Cliente> lote = Arrays.asList(
                 new Cliente("João Souza", "joao@email.com", "(21) 98765-4321"),
